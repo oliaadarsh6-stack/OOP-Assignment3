@@ -8,11 +8,11 @@ class Course {
     }
 }
 
-class StudentCourse {
+class Student {
     String name;
     ArrayList<Course> courses = new ArrayList<>();
 
-    StudentCourse(String name) {
+    Student(String name) {
         this.name = name;
     }
 
@@ -28,7 +28,7 @@ class StudentCourse {
     }
 
     public static void main(String[] args) {
-        StudentCourse s = new StudentCourse("Aadarsh");
+        Student s = new Student("Aadarsh");
 
         s.registerCourse(new Course("Java"));
         s.registerCourse(new Course("CyberSecurity"));
